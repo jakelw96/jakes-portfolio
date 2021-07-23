@@ -12,11 +12,73 @@ header {
   background-color: #14248a;
 }
 
+main {
+  background-color: #d4c2fc;
+}
+
+footer {
+  padding-bottom: 10%;
+  background-color: #d4c2fc;
+}
+
 .links {
   color: #f9f5ff;
 }
 
 .title {
   color: #f9f5ff;
-  font-size: 50px;
+}
+
+.bio {
+  text-align: center;
+}
+
+.avatar {
+  max-width: 25%;
+}
+
+.bio-text {
+  color: #28262c;
+  font-size: 40px;
+}
+
+.foot {
+  text-align: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 28px;
+  }
+  .links {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 25px;
+  }
+  .links {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 20px;
+  }
+  .links {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 12px;
+  }
+  .links {
+    font-size: 8px;
+  }
 }
