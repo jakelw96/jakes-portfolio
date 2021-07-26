@@ -5,6 +5,14 @@
   font-family: fantasy;
 }
 
+/* :root {
+  --section-headers: center;
+}
+
+.text-position-header {
+  text-align: var(--section-headers);
+} */
+
 header {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -40,6 +48,20 @@ footer {
 .bio-text {
   color: #28262c;
   font-size: 25px;
+}
+
+.project {
+  text-align: center;
+  background-color: #998fc7;
+}
+
+.project-img {
+  width: 110%;
+  padding-right: 5%;
+}
+
+.project-header {
+  text-align: center;
 }
 
 .foot {
@@ -117,6 +139,9 @@ footer {
   }
   footer {
     padding-bottom: 32%;
+  }
+  .project-img {
+    width: 105%;
   }
 }
 
