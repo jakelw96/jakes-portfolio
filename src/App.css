@@ -90,6 +90,10 @@ footer {
   font-size: 30px;
 }
 
+.resume-link {
+  font-size: 30px;
+}
+
 /* Media queries */
 @media screen and (max-width: 992px) {
   .title {
@@ -124,6 +128,12 @@ footer {
   }
   footer {
     padding-bottom: 18%;
+  }
+  .list-title {
+    font-size: 20px;
+  }
+  .list-items {
+      font-size: 15px;
   }
 }
 
