@@ -10,11 +10,12 @@ function Header() {
     const [aboutSelected, setAboutSelected] = useState(true);
     const [projectSelected, setProjectSelected] = useState(false);
     const [resumeSelected, setResumeSelected] = useState(false);
-
+  
+    
     return (
         <div>
             <header>
-                <Navigation>
+                <Navigation
                     contactSelected={contactSelected}
                     setContactSelected={setContactSelected}
                     aboutSelected={aboutSelected}
@@ -23,16 +24,21 @@ function Header() {
                     setProjectSelected={setProjectSelected}
                     resumeSelected={resumeSelected}
                     setResumeSelected={setResumeSelected}
-                </Navigation>
+                ></Navigation>
             </header>
             <main>
-                {/* <Resume></Resume>
-                <ContactForm></ContactForm>
-                <Project></Project> */}
                 {aboutSelected && (
                     <About></About>
                 )}
-                
+                {projectSelected && (
+                    <Project></Project>
+                )}
+                {contactSelected && (
+                    <ContactForm></ContactForm>
+                )}
+                {resumeSelected && (
+                    <Resume></Resume>
+                )}
                 </main>
         </div>
     )

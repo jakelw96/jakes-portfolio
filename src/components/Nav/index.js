@@ -16,6 +16,8 @@ function Navigation(props) {
         resumeSelected,
         setResumeSelected
     } = props
+    
+
     return (
         <Navbar collapseOnSelect>
         <Container fluid>
@@ -42,12 +44,63 @@ function Navigation(props) {
                     }}>About Me</h4></Nav.Link>
                     </>
                 )}
-                <Nav.Link><h4 className="links" onClick={() => {
-                    setProjectSelected(true)
-                    setAboutSelected(false)
-                }}>Portfolio</h4></Nav.Link>
-                <Nav.Link><h4 className="links">Contact</h4></Nav.Link>
-                <Nav.Link><h4 className="links">Resume</h4></Nav.Link>
+                {projectSelected ? (
+                    <>
+                    <Nav.Link><h4 className="links navActive" onClick={() => {
+                        setProjectSelected(true)
+                        setAboutSelected(false)
+                        setContactSelected(false)
+                        setResumeSelected(false)
+                    }}>Portfolio</h4></Nav.Link>
+                    </>
+                ) : ( 
+                    <>
+                    <Nav.Link><h4 className="links" onClick={() => {
+                        setProjectSelected(true)
+                        setAboutSelected(false)
+                        setContactSelected(false)
+                        setResumeSelected(false)
+                    }}>Portfolio</h4></Nav.Link>
+                    </>    
+                )}
+                {contactSelected ? (
+                    <>
+                    <Nav.Link><h4 className="links navActive" onClick={() => {
+                        setProjectSelected(false)
+                        setAboutSelected(false)
+                        setContactSelected(true)
+                        setResumeSelected(false)
+                    }}>Contact</h4></Nav.Link>
+                    </>
+                ) : (
+                    <>
+                    <Nav.Link><h4 className="links" onClick={() => {
+                        setProjectSelected(false)
+                        setAboutSelected(false)
+                        setContactSelected(true)
+                        setResumeSelected(false)
+                    }}>Contact</h4></Nav.Link>
+                    </>    
+                )}
+                {resumeSelected ? (
+                    <>
+                    <Nav.Link><h4 className="links navActive" onClick={() => {
+                        setProjectSelected(false)
+                        setAboutSelected(false)
+                        setContactSelected(false)
+                        setResumeSelected(true)
+                    }}>Resume</h4></Nav.Link>
+                    </>
+                ) : (
+                    <>
+                    <Nav.Link><h4 className="links" onClick={() => {
+                        setProjectSelected(false)
+                        setAboutSelected(false)
+                        setContactSelected(false)
+                        setResumeSelected(true)
+                    }}>Resume</h4></Nav.Link>
+                    </>    
+                )}
             </Nav>
         </Navbar.Collapse>
         </Container>
