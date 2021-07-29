@@ -1,10 +1,10 @@
 import React from 'react';
-import avatar from '../../assets/images/avatar.jpg';
+import avatar from '../../assets/images/picture.jpg';
 
 function About() {
     return (
         <section className="bio">
-       <h1>Bio</h1>
+       <h1>About Me</h1>
        <img src={avatar} className="avatar" alt="cover" />
        <p className="bio-text">
          My name is Jacob Williams and I am a web developer. I have experience working on the front-end with<br />
