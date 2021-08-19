@@ -1,5 +1,5 @@
 import React from 'react';
-import resumeFile from '../../assets/files/Jacob Williams Resume 2021 v2.docx';
+import resumeFile from '../../assets/files/Jacob Williams Resume.docx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -33,6 +33,7 @@ function Resume() {
                         <h2 className="list-title">Back-End Technologies</h2>
                         <ul>
                             <li className="list-items">Node.js</li>
+                            <li className="list-items">GraphQL</li>
                             <li className="list-items">Sequelize</li>
                             <li className="list-items">Express.js</li>
                             <li className="list-items">Handlebars</li>
