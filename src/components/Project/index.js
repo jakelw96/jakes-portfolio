@@ -17,10 +17,10 @@ function Project() {
                 <Row>
                     <Col sm={{span: 12}}>
                     <h1>Projects</h1>
-                    <p className="project-header-text">Below are some of the projects I have made. Please check out my GitHub page to see more of my work!  (link in "Contact Me" section)</p>
+                    <p className="project-header-text">These are some of the projects I have made. Please check out my GitHub page to see more of my work! (link in "Contact Me" section below)</p>
                     </Col>
                     <Col sm={{ span: 3, offset: 1}}>
-                        <h2 className="project-title">Entertain-Me 2.0</h2>
+                        <h2 className="project-title">EntertainMe 2.0</h2>
                         <img src={entertainMeImg} className="project-img" alt="entertain me"></img>
                         <a href="https://entertain-me-redux.herokuapp.com/"><h4>Link to Application</h4></a>
                         <a href="https://github.com/jakelw96/entertain-me-redux"><h4>GitHub Repository</h4></a>
