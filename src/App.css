@@ -14,15 +14,28 @@ header {
 
 main {
   background-color: #d4c2fc;
+  padding-bottom: 5px;
 }
 
 footer {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   background-color: #d4c2fc;
 }
 
-.links {
+.links-main {
   color: #f9f5ff;
+}
+
+.links-dropdown {
+  color: #f9f5ff;
+}
+#dropdown {
+  color: #f9f5ff;
+  display: none;
+}
+
+.dropdown-menu[aria-labelledby="dropdown"] {
+  background-color: #14248a;
 }
 
 .title {
@@ -31,6 +44,7 @@ footer {
 
 .bio {
   text-align: center;
+  background-color: #998fc7;
 }
 
 .avatar {
@@ -92,26 +106,57 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 992px) {
+  #dropdown {
+    display: inline-block;
+    font-size: 28px;
+    padding-right: 15%;
+    margin-bottom: 4%;
+    margin-left: 22%;
+  }
+  .links-dropdown {
+    color: #f9f5ff;
+    font-size: 22px;
+  }
   .title {
     font-size: 28px;
   }
-  .links {
-    font-size: 20px;
+  .links-main {
+    display: none;
   }
   .bio-text {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .project-title {
+    font-size: 17px;
+  }
+  a h4 {
+    font-size: 17px;
+  }
+  .list-title {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #dropdown {
+    font-size: 19px;
+    margin-bottom: 8%;
+    margin-left: 50%;
+  }
+  .links-dropdown {
+    font-size: 17px;
+  }
   .title {
     font-size: 20px;
   }
-  .links {
-    font-size: 13px;
-  }
   .bio-text {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .project-title {
+    font-size: 12px;
+  }
+  a h4 {
+    font-size: 12px;
   }
   .gh-icon {
     max-width: 20%;
@@ -134,14 +179,24 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  #dropdown {
+    font-size: 15px;
+    margin-left: 10%;
+  }
+  .links-dropdown {
+    font-size: 15px;
+  }
   .title {
     font-size: 15px;
   }
-  .links {
-    font-size: 12px;
-  }
   .bio-text {
     font-size: 13px;
+  }
+  .project-title {
+    font-size: 20px;
+  }
+  a h4 {
+    font-size: 20px;
   }
   footer {
     padding-bottom: 32%;
@@ -152,16 +207,21 @@ footer {
 }
 
 @media screen and (max-width: 390px) {
-  .title {
+  #dropdown {
+    font-size: 10px;
+    margin-bottom: 13%;
+    margin-left: -30%;
+  }
+  .links-dropdown {
     font-size: 10px;
   }
-  .links {
-    font-size: 7px;
+  .title {
+    font-size: 10px;
   }
   .bio-text {
     font-size: 10px;
   }
   footer {
-    padding-bottom: 77%;
+    padding-bottom: 75%;
   }
 }
