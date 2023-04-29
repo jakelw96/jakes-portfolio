@@ -1,29 +1,66 @@
+@import '@fontsource/ibm-plex-mono';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono";
+}
+
+.portfolio {
+  background-color: black;
 }
 
 header {
-  padding-top: 30px;
+  /* padding-top: 30px;
   padding-bottom: 50px;
-  color: #f9f5ff;
-  background-color: #14248a;
+  color: #f9f5ff; */
+  position: relative;
+  width: 2125px;
+  height: 90px;
+  left: 200px;
+  top: 0px;
+  background-color: #1B1B1B;
+}
+
+.nav-link h4 {
+  padding-top: 10px;
+  padding-left: 175px;
+  
+}
+
+.nav-link a {
+  margin-left: 200px;
+  
+}
+
+/* .fb-icon {
+  max-width: 15%;
+} */
+
+.li-icon {
+  max-height: 10%;
+}
+
+.gh-icon {
+  /* padding-top: 2%;
+  padding-bottom: 5%; */
+  max-height: 90%;
 }
 
 main {
-  background-color: #d4c2fc;
+  
   padding-bottom: 5px;
 }
 
 footer {
   padding-bottom: 5%;
-  background-color: #d4c2fc;
+  
 }
 
 .links-main {
   color: #f9f5ff;
+  left: 30px;
 }
 
 .links-dropdown {
@@ -44,7 +81,7 @@ footer {
 
 .bio {
   text-align: center;
-  background-color: #998fc7;
+  
 }
 
 .avatar {
@@ -78,7 +115,7 @@ footer {
   text-align: center;
 }
 
-.fb-icon {
+/* .fb-icon {
   max-width: 15%;
 }
 
@@ -90,7 +127,7 @@ footer {
 .gh-icon {
   padding-top: 2%;
   padding-bottom: 5%;
-}
+} */
 
 .contact-info {
   font-size: 30px;
@@ -103,6 +140,7 @@ footer {
 .navActive {
   color: yellow;
 }
+
 
 /* Media queries */
 @media screen and (max-width: 992px) {
@@ -207,7 +245,7 @@ footer {
 }
 
 @media screen and (max-width: 390px) {
-  #dropdown {
+  /* #dropdown {
     font-size: 10px;
     margin-bottom: 13%;
     margin-left: -30%;
@@ -223,5 +261,7 @@ footer {
   }
   footer {
     padding-bottom: 75%;
-  }
+  } */
+  
+  
 }

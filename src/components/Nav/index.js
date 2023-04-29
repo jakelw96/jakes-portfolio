@@ -3,6 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { NavDropdown } from "react-bootstrap";
+import ghIcon from "../../assets/icons/github-icon.png";
+import fb from "../../assets/icons/facebook-icon.png";
+import linkedin from "../../assets/icons/li-logo.png";
 
 function Navigation(props) {
   const {
@@ -20,7 +23,7 @@ function Navigation(props) {
     <Navbar collapseOnSelect>
       <Container fluid>
         <Navbar.Brand>
-          <h1 className="title">Jacob Williams' Web Application Portfolio</h1>
+          {/* <h1 className="title">Jacob Williams' Web Application Portfolio</h1> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -39,7 +42,7 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    About Me
+                    Home
                   </h4>
                 </Nav.Link>
               </>
@@ -55,7 +58,7 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    About Me
+                    Home
                   </h4>
                 </Nav.Link>
               </>
@@ -72,7 +75,7 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    Portfolio
+                    Projects
                   </h4>
                 </Nav.Link>
               </>
@@ -88,12 +91,12 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    Portfolio
+                    Projects
                   </h4>
                 </Nav.Link>
               </>
             )}
-            {/* {contactSelected ? (
+            {contactSelected ? (
               <>
                 <Nav.Link>
                   <h4
@@ -105,7 +108,7 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    Contact
+                    Contact Me!
                   </h4>
                 </Nav.Link>
               </>
@@ -121,11 +124,11 @@ function Navigation(props) {
                       setResumeSelected(false);
                     }}
                   >
-                    Contact
+                    Contact Me!
                   </h4>
                 </Nav.Link>
               </>
-            )} */}
+            )}
             {resumeSelected ? (
               <>
                 <Nav.Link>
@@ -138,7 +141,7 @@ function Navigation(props) {
                       setResumeSelected(true);
                     }}
                   >
-                    Resume
+                    Resume & Experience
                   </h4>
                 </Nav.Link>
               </>
@@ -154,11 +157,24 @@ function Navigation(props) {
                       setResumeSelected(true);
                     }}
                   >
-                    Resume
+                    Resume & Experience
                   </h4>
                 </Nav.Link>
               </>
             )}
+            <Nav.Link>
+              <a href="https://github.com/jakelw96">
+                <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
+              </a>
+            </Nav.Link>
+            {/* <Nav.Link>
+            <a href="https://www.linkedin.com/in/jacob-williams-968115206/">
+              <img className="li-icon" src={linkedin} alt="LinkedIn Profile" />
+            </a>
+            {/* <a href="https://www.facebook.com/jake.williams.75248/">
+              <img className="fb-icon" src={fb}   alt="Facebook Profile" />
+            </a> */}
+            {/* </Nav.Link>  */}
           </Nav>
 
           <Nav>
