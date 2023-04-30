@@ -12,40 +12,36 @@
 }
 
 header {
-  /* padding-top: 30px;
-  padding-bottom: 50px;
-  color: #f9f5ff; */
   position: relative;
   width: 2125px;
-  height: 90px;
+  height: 80px;
   left: 200px;
-  top: 0px;
-  background-color: #1B1B1B;
+  background-color: #2c2c2c;
+  border-radius: 0px 0px 40px 40px;
 }
 
 .nav-link h4 {
   padding-top: 10px;
-  padding-left: 175px;
-  
+  padding-left: 95px;
 }
 
+.nav-link h4:hover {
+  color: yellow;
+}
+
+.icons {
+  margin-left: 695px;
+}
 .nav-link a {
-  margin-left: 200px;
-  
+  margin-left: 50px;
 }
-
-/* .fb-icon {
-  max-width: 15%;
-} */
 
 .li-icon {
-  max-height: 10%;
+  max-height: 105%;
 }
 
 .gh-icon {
-  /* padding-top: 2%;
-  padding-bottom: 5%; */
-  max-height: 90%;
+  max-height: 85%;
 }
 
 main {

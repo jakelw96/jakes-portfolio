@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { NavDropdown } from "react-bootstrap";
 import ghIcon from "../../assets/icons/github-icon.png";
-import fb from "../../assets/icons/facebook-icon.png";
 import linkedin from "../../assets/icons/li-logo.png";
 
 function Navigation(props) {
@@ -163,18 +162,15 @@ function Navigation(props) {
               </>
             )}
             <Nav.Link>
+              <span className="icons">
               <a href="https://github.com/jakelw96">
                 <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
               </a>
-            </Nav.Link>
-            {/* <Nav.Link>
             <a href="https://www.linkedin.com/in/jacob-williams-968115206/">
               <img className="li-icon" src={linkedin} alt="LinkedIn Profile" />
             </a>
-            {/* <a href="https://www.facebook.com/jake.williams.75248/">
-              <img className="fb-icon" src={fb}   alt="Facebook Profile" />
-            </a> */}
-            {/* </Nav.Link>  */}
+            </span>
+             </Nav.Link>  
           </Nav>
 
           <Nav>
