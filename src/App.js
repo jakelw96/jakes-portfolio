@@ -10,7 +10,7 @@ function App() {
     return (
     <div className='portfolio'>
       <Header></Header>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

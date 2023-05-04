@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { NavDropdown, NavLink } from "react-bootstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
@@ -24,9 +23,7 @@ function Navigation(props) {
   return (
     <Navbar collapseOnSelect>
       <Container fluid>
-        <Navbar.Brand>
-          {/* <h1 className="title">Jacob Williams' Web Application Portfolio</h1> */}
-        </Navbar.Brand>
+        <Navbar.Brand></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="main-nav">

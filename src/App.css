@@ -1,4 +1,5 @@
 @import '@fontsource/ibm-plex-mono';
+@import '@fontsource/raleway';
 
 * {
   margin: 0;
@@ -11,6 +12,7 @@
   background-color: black;
 }
 
+/*Header section*/
 header {
   position: relative;
   width: 2125px;
@@ -30,7 +32,7 @@ header {
 }
 
 .nav-link h4:hover {
-  color: yellow;
+  color: rgb(196, 196, 196);
 }
 
 .icons {
@@ -48,34 +50,51 @@ header {
   max-height: 85%;
 }
 
+/* Main section */
 main {
-  
-  padding-bottom: 5px;
+  padding-bottom: 473px;
 }
 
-footer {
-  padding-bottom: 5%;
-  
+  /* Home page */
+.home-container {
+  margin-left: 314px !important;
+  margin-top: 200px;
 }
 
-.links-main {
-  color: #f9f5ff;
-  left: 30px;
-}
-
-.bio {
-  text-align: center;
-  
-}
-
-.avatar {
-  max-width: 25%;
+.title {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  font-size: 44px;
+  line-height: 51.66px;
 }
 
 .bio-text {
+  font-weight: 400;
   color: #28262c;
   font-size: 25px;
 }
+/* footer {
+  padding-bottom: 340px;
+  
+} */
+
+.links-main {
+  color: rgb(130, 130, 130);
+  left: 30px;
+}
+
+/* .bio {
+  text-align: center;
+  
+} */
+
+.avatar {
+  max-width: 50%;
+  border-radius: 500px 500px 500px 500px;
+}
+
+
 
 .project {
   text-align: center;
@@ -108,7 +127,7 @@ footer {
 }
 
 .navActive {
-  color: yellow;
+  color: rgb(196, 196, 196);
 }
 
 
@@ -145,7 +164,7 @@ footer {
   
   @media (hover: hover) {
     .nav-link h4:hover {
-      color: yellow;
+      color: rgb(196, 196, 196);
     }
   }
 }
@@ -185,7 +204,11 @@ footer {
     color: white;
   }
   .dropdown-menu a {
-    color: white !important;
+    color: rgb(130, 130, 130) !important;
+  }
+
+  #dropdown-button-drop-0 {
+    color: rgb(130, 130, 130)
   }
 
   .active {
