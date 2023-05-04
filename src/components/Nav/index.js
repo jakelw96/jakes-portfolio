@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { NavDropdown } from "react-bootstrap";
+import { NavDropdown, NavLink } from "react-bootstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
@@ -98,39 +98,6 @@ function Navigation(props) {
                 </Nav.Link>
               </>
             )}
-            {contactSelected ? (
-              <>
-                <Nav.Link>
-                  <h4
-                    className="links-main navActive"
-                    onClick={() => {
-                      setProjectSelected(false);
-                      setAboutSelected(false);
-                      setContactSelected(true);
-                      setResumeSelected(false);
-                    }}
-                  >
-                    Contact Me!
-                  </h4>
-                </Nav.Link>
-              </>
-            ) : (
-              <>
-                <Nav.Link>
-                  <h4
-                    className="links-main"
-                    onClick={() => {
-                      setProjectSelected(false);
-                      setAboutSelected(false);
-                      setContactSelected(true);
-                      setResumeSelected(false);
-                    }}
-                  >
-                    Contact Me!
-                  </h4>
-                </Nav.Link>
-              </>
-            )}
             {resumeSelected ? (
               <>
                 <Nav.Link>
@@ -164,6 +131,39 @@ function Navigation(props) {
                 </Nav.Link>
               </>
             )}
+            {contactSelected ? (
+              <>
+                <Nav.Link>
+                  <h4
+                    className="links-main navActive"
+                    onClick={() => {
+                      setProjectSelected(false);
+                      setAboutSelected(false);
+                      setContactSelected(true);
+                      setResumeSelected(false);
+                    }}
+                  >
+                    Contact Me
+                  </h4>
+                </Nav.Link>
+              </>
+            ) : (
+              <>
+                <Nav.Link>
+                  <h4
+                    className="links-main"
+                    onClick={() => {
+                      setProjectSelected(false);
+                      setAboutSelected(false);
+                      setContactSelected(true);
+                      setResumeSelected(false);
+                    }}
+                  >
+                    Contact Me
+                  </h4>
+                </Nav.Link>
+              </>
+            )}
             <Nav.Link>
               <span className="icons">
                 <a href="https://github.com/jakelw96">
@@ -183,101 +183,6 @@ function Navigation(props) {
           <Nav>
             {" "}
             {/* Used for smaller/mobile screens */}
-            {/* <NavDropdown title="Explore!" drop={"start"} id="dropdown">
-              <NavDropdown.Item id="dropdown-item">
-                {aboutSelected ? (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown navActive"
-                      onClick={() => {
-                        setAboutSelected(true);
-                        setProjectSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(false);
-                      }}
-                    >
-                      About Me
-                    </h4>
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown"
-                      onClick={() => {
-                        setAboutSelected(true);
-                        setProjectSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(false);
-                      }}
-                    >
-                      About Me
-                    </h4>
-                  </Nav.Link>
-                )}
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                {projectSelected ? (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown navActive"
-                      onClick={() => {
-                        setProjectSelected(true);
-                        setAboutSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(false);
-                      }}
-                    >
-                      Portfolio
-                    </h4>
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown"
-                      onClick={() => {
-                        setProjectSelected(true);
-                        setAboutSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(false);
-                      }}
-                    >
-                      Portfolio
-                    </h4>
-                  </Nav.Link>
-                )}
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                {resumeSelected ? (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown navActive"
-                      onClick={() => {
-                        setProjectSelected(false);
-                        setAboutSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(true);
-                      }}
-                    >
-                      Resume
-                    </h4>
-                  </Nav.Link>
-                ) : (
-                  <Nav.Link>
-                    <h4
-                      className="links-dropdown"
-                      onClick={() => {
-                        setProjectSelected(false);
-                        setAboutSelected(false);
-                        setContactSelected(false);
-                        setResumeSelected(true);
-                      }}
-                    >
-                      Resume
-                    </h4>
-                  </Nav.Link>
-                )}
-              </NavDropdown.Item>
-            </NavDropdown> */}
             <div className="drop-button">
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               {[DropdownButton].map((DropdownType, idx) => (
@@ -288,9 +193,42 @@ function Navigation(props) {
                   size="lg"
                   variant="dark"
                   title="Explore Jake's Portfolio"
-                  className="dropdown"
                 >
-                  <Dropdown.Item eventKey="1">Home</Dropdown.Item>
+                  {aboutSelected ? (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="1"
+                          className="navActive"
+                          onClick={() => {
+                            setAboutSelected(true);
+                            setProjectSelected(false);
+                            setContactSelected(false);
+                            setResumeSelected(false);
+                          }}
+                        >
+                          Home
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  ) : (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="1"
+                          className="active"
+                          onClick={() => {
+                            setAboutSelected(true);
+                            setProjectSelected(false);
+                            setContactSelected(false);
+                            setResumeSelected(false);
+                          }}
+                        >
+                          Home
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  )}
                   {projectSelected ? (
                     <>
                       <Nav.Link>
@@ -327,26 +265,98 @@ function Navigation(props) {
                     </>
                   )}
 
-                  <Dropdown.Item eventKey="3">
-                    Resume & Experience
-                  </Dropdown.Item>
-                  <Dropdown.Item eventKey="4">Contact Me</Dropdown.Item>
+                  {resumeSelected ? (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="3"
+                          className="links-main navActive"
+                          onClick={() => {
+                            setProjectSelected(false);
+                            setAboutSelected(false);
+                            setContactSelected(false);
+                            setResumeSelected(true);
+                          }}
+                        >
+                          Resume & Experience
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  ) : (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="3"
+                          className="links-main"
+                          onClick={() => {
+                            setProjectSelected(false);
+                            setAboutSelected(false);
+                            setContactSelected(false);
+                            setResumeSelected(true);
+                          }}
+                        >
+                          Resume & Experience
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  )}
+                  {contactSelected ? (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="4"
+                          className="links-main navActive"
+                          onClick={() => {
+                            setProjectSelected(false);
+                            setAboutSelected(false);
+                            setContactSelected(true);
+                            setResumeSelected(false);
+                          }}
+                        >
+                          Contact Me
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  ) : (
+                    <>
+                      <Nav.Link>
+                        <Dropdown.Item
+                          eventKey="4"
+                          className="links-main"
+                          onClick={() => {
+                            setProjectSelected(false);
+                            setAboutSelected(false);
+                            setContactSelected(true);
+                            setResumeSelected(false);
+                          }}
+                        >
+                          Contact Me
+                        </Dropdown.Item>
+                      </Nav.Link>
+                    </>
+                  )}
                   <Dropdown.Divider />
-                  <Dropdown.Item eventKey="4">
-                    <a href="https://github.com/jakelw96">
-                      <img
-                        className="gh-icon-dropdown"
-                        src={ghIcon}
-                        alt="GitHub Profile"
-                      />
-                    </a>
-                    <a href="https://www.linkedin.com/in/jacob-williams-968115206/">
-                      <img
-                        className="li-icon-dropdown"
-                        src={linkedin}
-                        alt="LinkedIn Profile"
-                      />
-                    </a>
+
+                  <Dropdown.Item
+                    href="https://github.com/jakelw96"
+                    eventKey="5"
+                  >
+                    <img
+                      className="gh-icon-dropdown"
+                      src={ghIcon}
+                      alt="GitHub Profile"
+                    />
+                  </Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item
+                    href="https://www.linkedin.com/in/jacob-williams-968115206/"
+                    eventKey="6"
+                  >
+                    <img
+                      className="li-icon-dropdown"
+                      src={linkedin}
+                      alt="LinkedIn Profile"
+                    />
                   </Dropdown.Item>
                 </DropdownType>
               ))}
