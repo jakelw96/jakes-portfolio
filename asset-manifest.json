@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jakes-portfolio/static/css/main.2ebea066.chunk.css",
-    "main.js": "/jakes-portfolio/static/js/main.6b7dbddd.chunk.js",
-    "main.js.map": "/jakes-portfolio/static/js/main.6b7dbddd.chunk.js.map",
+    "main.js": "/jakes-portfolio/static/js/main.f8040d6c.chunk.js",
+    "main.js.map": "/jakes-portfolio/static/js/main.f8040d6c.chunk.js.map",
     "runtime-main.js": "/jakes-portfolio/static/js/runtime-main.c4e64730.js",
     "runtime-main.js.map": "/jakes-portfolio/static/js/runtime-main.c4e64730.js.map",
     "static/css/2.4be38407.chunk.css": "/jakes-portfolio/static/css/2.4be38407.chunk.css",
@@ -19,7 +19,7 @@
     "static/media/entertain-me-img.fb6b334d.png": "/jakes-portfolio/static/media/entertain-me-img.fb6b334d.png",
     "static/media/li-logo.a95afc06.png": "/jakes-portfolio/static/media/li-logo.a95afc06.png",
     "static/media/photo-port-img.50569482.png": "/jakes-portfolio/static/media/photo-port-img.50569482.png",
-    "static/media/picture.8d0fbeb5.jpg": "/jakes-portfolio/static/media/picture.8d0fbeb5.jpg",
+    "static/media/picture.0dbb5b63.jpeg": "/jakes-portfolio/static/media/picture.0dbb5b63.jpeg",
     "static/media/pizza-hunt-img.df242bae.png": "/jakes-portfolio/static/media/pizza-hunt-img.df242bae.png",
     "static/media/tech-blog-img.78ba9465.png": "/jakes-portfolio/static/media/tech-blog-img.78ba9465.png",
     "static/media/thebestsellers-img.dc0953f3.png": "/jakes-portfolio/static/media/thebestsellers-img.dc0953f3.png"
@@ -29,6 +29,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.ace20ec0.chunk.js",
     "static/css/main.2ebea066.chunk.css",
-    "static/js/main.6b7dbddd.chunk.js"
+    "static/js/main.f8040d6c.chunk.js"
   ]
 }
