@@ -1,5 +1,5 @@
 import React from "react";
-import resumeFile from "../../assets/files/Jacob Williams Resume 2022.pdf";
+import resumeFile from "../../assets/files/Jacob Williams Resume.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -52,7 +52,7 @@ function Resume() {
         </Row>
       </Container>
       <a href={resumeFile} className="resume-link" download>
-        Download My Resume
+        Download Resume
       </a>
     </section>
   );
