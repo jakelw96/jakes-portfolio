@@ -161,19 +161,14 @@ function Navigation(props) {
                 </Nav.Link>
               </>
             )}
-            <Nav.Link>
-              <span className="icons">
-                <a href="https://github.com/jakelw96">
-                  <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
-                </a>
-                <a href="https://www.linkedin.com/in/jacob-williams-968115206/">
-                  <img
-                    className="li-icon"
-                    src={linkedin}
-                    alt="LinkedIn Profile"
-                  />
-                </a>
-              </span>
+            <Nav.Link href="https://github.com/jakelw96" className="gh-box">
+              <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.linkedin.com/in/jacob-williams-968115206/"
+              className="li-box"
+            >
+              <img className="li-icon" src={linkedin} alt="LinkedIn Profile" />
             </Nav.Link>
           </Nav>
 

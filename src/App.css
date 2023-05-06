@@ -219,7 +219,7 @@ main {
   }
 
   .icons {
-    margin-left: 38px;
+    margin-left: 20px;
   }
   .nav-link a {
     margin-left: 35px;
@@ -227,12 +227,16 @@ main {
   
   .li-icon {
     max-height: 60%;
+    margin-left: 20px;
   }
   
   .gh-icon {
     max-height: 75%;
+    padding-right: 100px;
   }
-  
+  .gh-box {
+    margin-left: 20px !important;
+  }
   @media (hover: hover) {
     .nav-link h4:hover {
       color: rgb(196, 196, 196);
