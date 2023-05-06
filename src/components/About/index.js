@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import HomeModal from "../Modal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import avatar from "../../assets/images/picture.jpeg";
 
-function About(props) {
-  const { setAboutSelected, setProjectSelected } = props;
+function About() {
+  const [show, setShow] = useState(false);
 
   return (
     <Container fluid className="home-container">
@@ -19,25 +20,24 @@ function About(props) {
             video game. The Legend of Zelda series is my favorite! Please take
             some time to review my projects and experience. I am currently
             searching for a web, front-end, back-end, full-stack, or overall
-            software developer role! Thank you for stopping by and click the
-            button below to head to my projects page!
+            software developer role! Please click on the button below for a
+            special message!
           </p>
 
           <button
             className="homePageBtn"
             onClick={() => {
-              setAboutSelected(false);
-              setProjectSelected(true);
+              setShow(true);
             }}
           >
-            <h2 className="homePageBtnText">Let's get started</h2>
+            <h2 className="homePageBtnText">Special Message!</h2>
           </button>
         </Col>
         <Col md={{ span: 6, offset: 1 }} className="regular-col">
           <img src={avatar} className="avatar" alt="cover" />
         </Col>
+
         {/* For smaller screens */}
-      
         <Col md={5} className="mobile-col">
           <h1 className="title">Jacob Williams Web Portfolio</h1>
           <p className="bio-text">
@@ -54,20 +54,17 @@ function About(props) {
           <button
             className="homePageBtn"
             onClick={() => {
-              setAboutSelected(false);
-              setProjectSelected(true);
+              setShow(true);
             }}
           >
-            <h2 className="homePageBtnText">Let's get started</h2>
+            <h2 className="homePageBtnText">Special Message!</h2>
           </button>
         </Col>
-        <Col  md={{ span: 6, offset: 1 }} className="mobile-col">
+        <Col md={{ span: 6, offset: 1 }} className="mobile-col">
           <img src={avatar} className="avatar" alt="cover" />
         </Col>
       </Row>
-
-      
-      
+      <HomeModal show={show} setShow={setShow}></HomeModal>
     </Container>
   );
 }

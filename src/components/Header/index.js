@@ -26,14 +26,7 @@ function Header() {
         ></Navigation>
       </header>
       <main>
-        {aboutSelected && (
-          <About
-            aboutSelected={aboutSelected}
-            setAboutSelected={setAboutSelected}
-            projectSelected={projectSelected}
-            setProjectSelected={setProjectSelected}
-          ></About>
-        )}
+        {aboutSelected && <About></About>}
         {projectSelected && <Project></Project>}
         {contactSelected && <ContactForm></ContactForm>}
         {resumeSelected && <Resume></Resume>}

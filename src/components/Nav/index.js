@@ -19,7 +19,7 @@ function Navigation(props) {
     resumeSelected,
     setResumeSelected,
   } = props;
-
+  console.log(aboutSelected);
   return (
     <Navbar collapseOnSelect>
       <Container fluid>
@@ -196,7 +196,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="1"
-                          className="navActive"
+                          className="active"
                           onClick={() => {
                             setAboutSelected(true);
                             setProjectSelected(false);
@@ -213,7 +213,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="1"
-                          className="active"
+                          className="links-main"
                           onClick={() => {
                             setAboutSelected(true);
                             setProjectSelected(false);
@@ -231,7 +231,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="2"
-                          className="links-main navActive"
+                          className="active"
                           onClick={() => {
                             setProjectSelected(true);
                             setAboutSelected(false);
@@ -249,6 +249,7 @@ function Navigation(props) {
                         <Dropdown.Item
                           eventKey="2"
                           className="links-main"
+                          id="not-active"
                           onClick={() => {
                             setProjectSelected(true);
                             setAboutSelected(false);
@@ -267,7 +268,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="3"
-                          className="links-main navActive"
+                          className="active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);
@@ -302,7 +303,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="4"
-                          className="links-main navActive"
+                          className="active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);
