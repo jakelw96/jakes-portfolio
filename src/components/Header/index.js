@@ -28,6 +28,8 @@ function Header() {
       <main>
         {aboutSelected && (
           <About
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
             projectSelected={projectSelected}
             setProjectSelected={setProjectSelected}
           ></About>
