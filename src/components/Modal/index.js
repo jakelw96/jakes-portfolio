@@ -9,7 +9,7 @@ function HomeModal(props) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} dialogClassName="modal-width">
         <Modal.Header closeButton>
           <Modal.Title className="modal-title">
             Thank you for stopping by!

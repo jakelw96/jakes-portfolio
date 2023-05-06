@@ -283,6 +283,10 @@ main {
     display: none;
   }
 
+  .modal-width {
+    /* max-width: 300px !important; */
+  }
+
   header {
     width: 768px;
     height: 80px;
@@ -391,6 +395,11 @@ main {
   }
 
   /* Home page */
+
+  .modal-width {
+    max-width: 300px !important;
+    margin-left: 117px !important;
+  }
    .home-container {
     margin-top: 60px;
   }
@@ -419,6 +428,10 @@ main {
   }
 
   /* Home page */
+  .modal-width {
+    max-width: 250px !important;
+    margin-left: 40px !important;
+  }
    .home-container {
     margin-top: 35px;
   }
@@ -426,7 +439,7 @@ main {
     margin-left: 0% !important;
   }
   .bio-text {
-    font-size: 9px;
+    font-size: 12px;
   }
   .avatar {
     max-width: 70%;
