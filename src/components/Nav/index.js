@@ -161,14 +161,17 @@ function Navigation(props) {
                 </Nav.Link>
               </>
             )}
-            <Nav.Link href="https://github.com/jakelw96" className="gh-box">
+            <Nav.Link href="https://github.com/jakelw96" >
+              <a href="https://github.com/jakelw96" className="gh-box">
               <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
+              </a>
             </Nav.Link>
             <Nav.Link
               href="https://www.linkedin.com/in/jacob-williams-968115206/"
-              className="li-box"
             >
+              <a href="https://www.linkedin.com/in/jacob-williams-968115206/" className="li-box">
               <img className="li-icon" src={linkedin} alt="LinkedIn Profile" />
+              </a>
             </Nav.Link>
           </Nav>
 
