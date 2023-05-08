@@ -13,7 +13,7 @@ function About() {
       <Row className="home-row mobile-row">
         <Col md={5} className="regular-col">
           <h1 className="title">Jacob Williams Web Portfolio</h1>
-          <p className="bio-text">
+          <p className="sub-text">
             Welcome to my portfolio! A little about me: I am a full-stack
             developer. When I am not coding, I am spending time with my family,
             going on adventerous drives, or relaxing at home playing a nice
@@ -40,7 +40,7 @@ function About() {
         {/* For smaller screens */}
         <Col md={5} className="mobile-col">
           <h1 className="title">Jacob Williams Web Portfolio</h1>
-          <p className="bio-text">
+          <p className="sub-text">
             Welcome to my portfolio! A little about me: I am a full-stack
             developer. When I am not coding, I am spending time with my family,
             going on adventerous drives, or relaxing at home playing a nice
