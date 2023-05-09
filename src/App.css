@@ -180,6 +180,14 @@ main {
 }
 
 /* Project Page */
+.project-container-sub {
+  display: none !important;
+}
+
+.project-header-container-sub {
+  display: none !important;
+}
+
 .project {
   text-align: center;
 }
@@ -212,17 +220,18 @@ main {
   color: var(--btnTextColor);
   text-shadow: var(--btnTextBoxShadow);
 }
-.project-header-container {
+.project-header-container-main {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.project-header-container h1 {
+.project-header-container-main h1 {
   text-align: center;
 }
 .project-container {
   padding-bottom: 100px;
 }
+
 
 /* .project-header {
   text-align: center;
@@ -261,7 +270,7 @@ main {
 
   .nav-link h4 {
     padding-top: 10px;
-    padding-left: 45px;
+    padding-left: 35px;
     font-size: 15px;
   }
 
@@ -305,8 +314,8 @@ main {
     line-height: 30px;
   }
   
-  .bio-text {
-    font-size: 14px;
+  .sub-text {
+    font-size: 16px;
   }
   
   .homePageBtn {
@@ -319,6 +328,23 @@ main {
     width: 164px;
     font-size: 14px;
   }
+
+  /* Project page */
+  .sec-title {
+    font-size: 25px;
+  }
+  .sec-sub-text {
+  font-size: 16px;
+  }
+  .projectPageBtn {
+    padding: 16px 3px;
+    width: 170px;
+    height: 55px;
+  }
+  .projectPageBtnText {
+    font-size: 12px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -410,7 +436,7 @@ main {
     font-size: 18px;
   }
  
-  .bio-text {
+  .sub-text {
     font-size: 13px;
   }
   
@@ -421,12 +447,47 @@ main {
   }
   
   .homePageBtnText {
-    
     font-size: 12px;
   }
 
   .avatar {
     max-width: 70%;
+  }
+
+  /* Project Page */
+  .project-header-container-main {
+    display: none !important;
+  }
+  .project-header-container-sub {
+    display: inline-block !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .project-header-container-sub h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .project-header-container-sub p {
+    font-size: 17px;
+  }
+  .project-container {
+    display: none !important;
+  }
+  .project-container-sub {
+    display: inline-block !important;
+    padding-bottom: 60px;
+  }
+  .project-container-sub h1 {
+    font-size: 25px;
+  }
+
+  .project-container-sub p {
+    font-size: 17px;
+  }
+  .mobile-btn-row img {
+    padding-top: 25px;
   }
 }
 
@@ -488,12 +549,26 @@ main {
    .home-row {
     margin-left: 0% !important;
   }
-  .bio-text {
-    font-size: 12px;
-  }
   .avatar {
     max-width: 70%;
     padding-top: 34px;
     margin-left: 38px;
+  }
+  .sub-text {
+    font-size: 11px;
+  }
+
+  /* Project page */
+  .project-header-container-sub {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .project-header-container-sub p {
+    font-size: 15px;
+  }
+
+  .project-container-sub p {
+    font-size: 15px;
   }
 }
