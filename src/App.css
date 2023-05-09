@@ -232,25 +232,19 @@ main {
   padding-bottom: 100px;
 }
 
-
-/* .project-header {
-  text-align: center;
-} */
-
-/* .foot {
-  text-align: center;
-} */
-
-/* .footer-header {
-  text-align: center;
-} */
+/* Resume & Experience page */
 
 .contact-info {
   font-size: 30px;
 }
 
 .resume-link {
-  font-size: 30px;
+  margin-right: 75px;
+  margin-bottom: 5%;
+}
+
+.js-img {
+  max-width: 10%;
 }
 
 .navActive {
