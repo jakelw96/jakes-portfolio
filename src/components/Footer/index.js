@@ -10,7 +10,7 @@ import ghIcon from '../../assets/icons/github-icon.png';
 function Footer() {
     return (
         <footer>
-            <Container>
+            {/* <Container className='portfolio'>
                 <h1 className="footer-header">Contact Me</h1>
                 <Row className="foot">
                     <Col>
@@ -32,7 +32,7 @@ function Footer() {
                         </a> 
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </footer>
     );
 }
