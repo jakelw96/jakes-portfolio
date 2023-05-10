@@ -248,10 +248,27 @@ main {
   padding-bottom: 100px;
 }
 
+.resume-header-container-sub {
+  display: none !important;
+}
+
 .navActive {
   color: rgb(196, 196, 196);
 }
 
+/* Contact Page */
+.contact-header-container-main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-header-container-main h1 {
+  text-align: center;
+}
+
+.contact-page-container {
+  padding-bottom: 355px;
+}
 
 /* Media queries */
 @media screen and (max-width: 1024px) {

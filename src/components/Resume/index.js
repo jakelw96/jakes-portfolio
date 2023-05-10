@@ -16,9 +16,9 @@ function Resume() {
             <p className="sub-text">
               This page outlines the different programming languages I have
               experience with, their associated libraries, and other
-              miscellaneous skills. The badge below is proof of my
-              certification with the University of Utah. Please click on it to
-              verify my credentials. My resume is also available for download!
+              miscellaneous skills. The badge below is proof of my certification
+              with the University of Utah. Please click on it to verify my
+              credentials. My resume is also available for download!
             </p>
           </Col>
           <Col sm={6}>
@@ -40,9 +40,9 @@ function Resume() {
             <p className="sub-text">
               This page outlines the different programming languages I have
               experience with, their associated libraries, and other
-              miscellaneous skills. The badge below is proof of my
-              certification with the University of Utah. Please click on it to
-              verify my credentials. My resume is also available for download!
+              miscellaneous skills. The badge below is proof of my certification
+              with the University of Utah. Please click on it to verify my
+              credentials. My resume is also available for download!
             </p>
           </Col>
           <Col>

@@ -1,61 +1,26 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 function ContactForm() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    const [ errorMessage, setErrorMessage ] = useState('');
+  return (
+    <Container className="contact-page-container">
+      <Row className="contact-header-container-main">
+        <Col sm={{ span: 12 }}>
+          <h1 className="title">Contact</h1>
+          <p className="sub-text">
+            Thanks so much again for visiting my page! My email and phone number
+            are listed below. You can also reach me on LinkedIn(link in top
+            right of navigation bar). A reminder: I am currently looking for
+            software and/or web developer opportunities!
+          </p>
+          <h1 className="sec-title">Phone Number: 801-452-5681</h1>
+          <h1 className="sec-title">
+          Email: <a href="mailto:jake.lw96@gmail.com">jake.lw96@gmail.com</a>
+          </h1>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
 
-    function handleChange(data) {
-        if (data.target.name === 'email') {
-            const isValid = validateEmail(data.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('')
-            }
-        } else {
-            if (!data.target.value.length) {
-                setErrorMessage(`${data.target.name} is required.`)
-            } else {
-                setErrorMessage('')
-            }
-        }
-    }
-
-    function handleSubmit(data) {
-        data.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [data.target.name]: data.target.value });
-        }
-    }
-
-    return (
-        <section className="project">
-            <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" onBlur={handleChange} defaultValue={email} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p>{errorMessage}</p>
-                    </div>
-                )}
-                <button data-testid="button" type="submit">Submit</button>
-            </form>
-        </section>
-    );
-};
-
-
-export default ContactForm
+export default ContactForm;
