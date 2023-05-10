@@ -243,8 +243,9 @@ main {
   margin-bottom: 5%;
 }
 
-.js-img {
-  max-width: 10%;
+.resume-header-container-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .navActive {
@@ -339,6 +340,10 @@ main {
     font-size: 12px;
   }
   
+  /* Resume & Experience Page */
+  .uofu-badge {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -483,6 +488,25 @@ main {
   .mobile-btn-row img {
     padding-top: 25px;
   }
+
+  /* Resume & Experience page */
+  .resume-header-container-main {
+    display: none !important;
+  }
+
+  .resume-header-container-sub {
+    display: inline-block !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sec-title {
+    font-size: 20px;
+  }
+
+  .uofu-badge {
+    max-width: 30%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -564,5 +588,10 @@ main {
 
   .project-container-sub p {
     font-size: 15px;
+  }
+
+  /* Resume & Experience */
+  .uofu-badge {
+    max-width: 50%;
   }
 }
