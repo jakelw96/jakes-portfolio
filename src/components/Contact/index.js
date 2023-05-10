@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-function ContactForm() {
+function Contact() {
   return (
     <Container className="contact-page-container">
       <Row className="contact-header-container-main">
@@ -15,7 +15,7 @@ function ContactForm() {
           </p>
           <h1 className="sec-title">Phone Number: 801-452-5681</h1>
           <h1 className="sec-title">
-          Email: <a href="mailto:jake.lw96@gmail.com">jake.lw96@gmail.com</a>
+            Email: <a href="mailto:jake.lw96@gmail.com">jake.lw96@gmail.com</a>
           </h1>
         </Col>
       </Row>
@@ -23,4 +23,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Contact;

@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -161,16 +162,21 @@ function Navigation(props) {
                 </Nav.Link>
               </>
             )}
-            <Nav.Link href="https://github.com/jakelw96" >
+            <Nav.Link href="https://github.com/jakelw96">
               <a href="https://github.com/jakelw96" className="gh-box">
-              <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
+                <img className="gh-icon" src={ghIcon} alt="GitHub Profile" />
               </a>
             </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/jacob-williams-968115206/"
-            >
-              <a href="https://www.linkedin.com/in/jacob-williams-968115206/" className="li-box">
-              <img className="li-icon" src={linkedin} alt="LinkedIn Profile" />
+            <Nav.Link href="https://www.linkedin.com/in/jacob-williams-968115206/">
+              <a
+                href="https://www.linkedin.com/in/jacob-williams-968115206/"
+                className="li-box"
+              >
+                <img
+                  className="li-icon"
+                  src={linkedin}
+                  alt="LinkedIn Profile"
+                />
               </a>
             </Nav.Link>
           </Nav>
@@ -211,7 +217,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="1"
-                          className="links-main"
+                          className="links-main not-active"
                           onClick={() => {
                             setAboutSelected(true);
                             setProjectSelected(false);
@@ -246,8 +252,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="2"
-                          className="links-main"
-                          id="not-active"
+                          className="links-main not-active"
                           onClick={() => {
                             setProjectSelected(true);
                             setAboutSelected(false);
@@ -283,7 +288,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="3"
-                          className="links-main"
+                          className="links-main not-active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);
@@ -318,7 +323,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="4"
-                          className="links-main"
+                          className="links-main not-active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);

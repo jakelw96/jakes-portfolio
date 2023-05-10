@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navigation from "../Nav";
 import Project from "../Project";
-import ContactForm from "../Contact";
+import Contact from "../Contact";
 import Resume from "../Resume";
 import About from "../About";
 
@@ -28,7 +28,7 @@ function Header() {
       <main>
         {aboutSelected && <About></About>}
         {projectSelected && <Project></Project>}
-        {contactSelected && <ContactForm></ContactForm>}
+        {contactSelected && <Contact></Contact>}
         {resumeSelected && <Resume></Resume>}
       </main>
     </div>
