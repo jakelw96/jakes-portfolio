@@ -217,7 +217,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="1"
-                          className="links-main not-active"
+                          className="not-active"
                           onClick={() => {
                             setAboutSelected(true);
                             setProjectSelected(false);
@@ -252,7 +252,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="2"
-                          className="links-main not-active"
+                          className="not-active"
                           onClick={() => {
                             setProjectSelected(true);
                             setAboutSelected(false);
@@ -288,7 +288,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="3"
-                          className="links-main not-active"
+                          className="not-active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);
@@ -323,7 +323,7 @@ function Navigation(props) {
                       <Nav.Link>
                         <Dropdown.Item
                           eventKey="4"
-                          className="links-main not-active"
+                          className="not-active"
                           onClick={() => {
                             setProjectSelected(false);
                             setAboutSelected(false);

@@ -9,9 +9,9 @@ function Contact() {
           <h1 className="title">Contact</h1>
           <p className="sub-text">
             Thanks so much again for visiting my page! My email and phone number
-            are listed below. You can also reach me on LinkedIn(link in top
-            right of navigation bar). A reminder: I am currently looking for
-            software and/or web developer opportunities!
+            are listed below. You can also reach me on LinkedIn(link is in
+            navigation bar). A reminder: I am currently looking for software
+            and/or web developer opportunities!
           </p>
           <h1 className="sec-title">Phone Number: 801-452-5681</h1>
           <h1 className="sec-title">

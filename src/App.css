@@ -21,16 +21,18 @@
 
 .portfolio {
   background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /*Header section*/
 header {
   position: relative;
-  width: 2125px;
-  height: 80px;
-  left: 200px;
+  width: 1600px;
+  height: 60px;
+  left: 150px;
   background-color: #2c2c2c;
-  border-radius: 0px 0px 40px 40px;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .drop-button {
@@ -38,38 +40,36 @@ header {
 }
 
 .nav-link h4 {
-  padding-top: 10px;
-  padding-left: 95px;
+  padding-left: 62px;
+  padding-top: 5px;
+  font-size: 18px;
 }
 
 .nav-link h4:hover {
   color: rgb(196, 196, 196);
 }
 
-.icons {
-  margin-left: 695px;
-}
 .nav-link a {
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .li-icon {
-  max-height: 105%;
+  max-height: 57%;
 }
 
 .gh-icon {
-  max-height: 85%;
-  margin-left: 675px;
+  max-height: 60%;
+  margin-left: 575px;
 }
 
 /* Main section */
 main {
-  padding-bottom: 305px;
+  padding-bottom: 221px;
 }
 
   /* Home page */
 .home-container {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .mobile-col {
@@ -77,14 +77,14 @@ main {
 }
 
 .home-row {
-  margin-left: 20% !important;
+  margin-left: 18% !important;
 }
 
 .title {
   font-family: var(--pageHeaderTextFont);
   font-weight: 800;
   color: var(--pageHeaderTextColor);
-  font-size: 44px;
+  font-size: 34px;
   line-height: 51.66px;
 }
 
@@ -99,7 +99,7 @@ main {
 .sub-text {
   font-weight: 400;
   color: var(--subTextColor);
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .sec-sub-text {
@@ -111,10 +111,10 @@ main {
 .homePageBtn {
   box-sizing: border-box;
   align-items: center;
-  padding: 21px 64px;
+  padding: 15px 19px;
   gap: 10px;
-  width: 307.89px;
-  height: 63px;
+  width: 200px;
+  height: 50px;
   background-color: var(--btnBackgroundColor);
   border: 1px solid var(--btnBorder);
   box-shadow: var(--btnBoxShadow);
@@ -126,7 +126,7 @@ main {
   height: 21px;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 21px;
   color: var(--btnTextColor);
   text-shadow: var(--btnTextBoxShadow);
@@ -146,7 +146,7 @@ main {
 }
 
 .modal-btn-text {
-  width: 124px;
+  width: 0px;
   height: 15px;
   font-style: normal;
   font-weight: 700;
@@ -274,32 +274,29 @@ main {
 @media screen and (max-width: 1024px) {
   /*Header Section */
   header {
-    width: 915px;
+    width: 925px;
     height: 75px;
-    left: 55px;
+    left: 50px;
     border-radius: 0px 0px 40px 40px;
   }
 
   .nav-link h4 {
-    padding-top: 10px;
-    padding-left: 35px;
+    padding-top: 7px;
+    padding-left: 40px;
     font-size: 15px;
   }
 
-  .icons {
-    margin-left: 20px;
-  }
   .nav-link a {
     margin-left: 35px;
   }
   
   .li-icon {
-    max-height: 70%;
+    max-height: 65%;
     padding-top: 5px;
   }
   
   .gh-icon {
-    max-height: 75%;
+    max-height: 73%;
     margin-left: 50px;
   }
 
